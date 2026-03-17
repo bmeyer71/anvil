@@ -11,5 +11,4 @@
   "license": "MIT",
   "keywords": ["verification", "code-review", "adversarial", "evidence"],
   "agents": "agents/",
-  "mcpServers": ".mcp.json"
 }
