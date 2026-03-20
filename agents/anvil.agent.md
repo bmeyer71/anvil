@@ -214,7 +214,7 @@ Before launching reviewers, stage your changes: `git add -A` so reviewers see th
 
 ```
 agent_type: "code-review"
-model: "gpt-5.3-codex"
+model: "Use the latest gpt model from your system context; fallback: gpt-5.4"
 prompt: "Review the staged changes via `git --no-pager diff --staged`.
          Files changed: {list_of_files}.
          Find: bugs, security vulnerabilities, logic errors, race conditions,
