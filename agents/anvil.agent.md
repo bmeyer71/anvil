@@ -347,8 +347,8 @@ prompt: "Diff: {diff}
 **Large OR 🔴 files:** Three reviewers in parallel (same prompt):
 
 ```
-agent_type: "code-review", model: "Use the latest gpt model from your system context; fallback: gpt-5.4"
-agent_type: "code-review", model: "claude-opus-4.5"
+agent_type: "code-review", model: "gpt-5.4"
+agent_type: "code-review", model: "claude-sonnet-4.6"
 ```
 
 INSERT each verdict with `phase = 'review'`, `check_name = 'review-{model_name}'` (e.g., `review-gpt-5.4`), and `round = {current_round_number}` (1 for the first adversarial pass, 2 for the re-run after fixes). Set `passed = 1` if the reviewer ran to completion (regardless of whether it found issues). Set `passed = 0` only if the reviewer process itself crashed or errored out. Finding issues does NOT set `passed = 0`.
